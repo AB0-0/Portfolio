@@ -7,7 +7,7 @@
         <!--soc med icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <!--Navi-->
@@ -15,11 +15,11 @@
             <a href="#home" class="nav-logo">ABO</a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#skills">skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#certification">Certifications</a></li>
-                <li><a href="#involvement"></a>Involvement</li>
+                <li><a href="#involvement">Involvement</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -27,13 +27,14 @@
         <!--hero-->
         <section id="home" class="hero">
             <div class="content">
-                <h1>good morrow, <strong>IM ASHLEE JENNIFER LEE</strong></h1>
+                <h1>good morrow,</h1>
+                <h1><strong>IM ASHLEE JENNIFER LEE</strong></h1>
                 <h2>Front-End Developer</h2>
                 <p class="highlight">with experience in Python, Java, and MySQL</p>
                 <a href="#contact" class="contact-button">Connect with Me!</a>
             </div>
             <div class="img">
-                <img src="profile.jpg" alt="Profile" class="profile-img">
+                <img src="./assets/profile.png" alt="Profile" class="profile-img">
             </div>
         </section>
 
@@ -41,32 +42,28 @@
         <section id="skills" class="skills">
             <h1>Skills & Interests</h1>
             <div class="skills-grid">
-                <div class="skills-card">
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Technical Skills:</h2>
-                    <ul>
-                        <li>Python, Java, Dart</li>
+                <div class="skills-card">   
+                    <h2><i class="fa-solid fa-code"></i> &ensp;Technical Skills:</h2>
+                    <ul class="skills-list">
                         <li>HTML, CSS, JavaScript</li>
-                        <li>React, Flutter</li>
+                        <li>Python, Java, Dart</li>
                         <li>MySQL, Supabase </li>
                         <li>Figma</li>
                     </ul>
                 </div>
-                <div class="skills-card">
-                    <i class="fa-solid fa-users"></i>
-                    <h2>Soft Skills:</h2>
-                    <ul>
+                <div class="skills-card">                 
+                    <h2><i class="fa-solid fa-users"></i>&emsp;Soft Skills:</h2>
+                    <ul class="skills-list">
                         <li>Leadership, Problem-Solving, Adaptability</li>
                         <li>Project Planning, Task Coordination, Collaboration</li>
                     </ul>
                 </div>
                 <div class="skills-card">
-                    <i class="fa-solid fa-star"></i>
-                    <h2>Fields of Interest:</h2>
-                    <ul>
-                        <li>Application Development</li>
-                        <li>Game Development</li>
+                    <h2><i class="fa-solid fa-star"></i>&ensp;Fields of Interest:</h2>
+                    <ul class="skills-list">
                         <li>Frontend Web Development</li>
+                        <li>Game Development</li>
+                        <li>Application Development</li>
                         <li>UI/UX Design</li>
                     </ul>
                 </div>
@@ -77,61 +74,75 @@
         <section id="projects" class="projects">
             <h1>Projects</h1>
 
-            <div class="button container">
+            <div class="project-container">
                 <div class="project">
                     <h2 class="project-title">Pyalung Tamu</h2>
-                    <a href=""><img src="./img.png"/></a>
-                    <p class="project-desc">Mobile App for rediscovering Kapampangan childhood games through gamification. Mini-games include Siglulung Bangka [Boat Typing Race], Tugak Catching [Frog Catching], & Mitutuglung [Matching Card Game].</p>
+                    <a href=""><img class="project-img" src="./assets/pyalung.PNG"/></a>
+                    <p class="project-desc">Mobile App for rediscovering Kapampangan childhood games through gamification. Mini-games include <strong>Siglulung Bangka [Boat Typing Race], Tugak Catching [Frog Catching], & Mitutuglung [Matching Card Game].</strong></p>
                 </div>
                 <div class="project">
                     <h2 class="project-title">EmberWatch</h2>
-                    <a href=""><img src="./img.png"/></a>
-                    <p class="project-desc">Mobile App for Fire and Smoke Detection. Submitted to APPCON 2024 and  was in the Top 20</p>
+                    <a href=""><img class="project-img" src="./assets/emberwatch_logo.png"/></a>
+                    <p class="project-desc">Mobile App for Fire and Smoke Detection. Submitted to <strong>APPCON 2024</strong> and  was in the <strong>Top 20</strong></p>
                 </div>
                 <div class="project">
                     <h2 class="project-title">Examii</h2>
-                    <a href=""><img src="./img.png"/></a>
-                    <p class="project-desc">Web App that allow users to upload their own mock questions [only in csv format for now], and practice their exam.</p>
+                    <a href=""><img class="project-img" src="./assets/examii.png"/></a>
+                    <p class="project-desc">Web App that allow users to upload their own mock questions <i>[only in csv format for now]</i>, and practice their exam.</p>
                 </div>
                 <div class="project">
                     <h2 class="project-title">Broket</h2>
-                    <a href=""><img src="./img.png"/></a>
+                    <a href=""><img class="project-img" src="./assets/broket.png"/></a>
                     <p>Web App for keeping track of monthly income and expenses. Name is a play on words, Broke and Budget, Broket. For broke students with a limited budget.</p>
                 </div>
                 <div class="project">
                     <h2 class="project-title">mentta</h2>
-                    <a href=""><img src="./img.png"/></a>
+                    <a href=""><img class="project-img" src="./img.png"/></a>
                     <p>**work in progress**</p>
                 </div>
-                
+                <div class="project">
+                    <h2 class="project-title">CLAPPY Seal</h2>
+                    <a href=""><img class="project-img" src="./img.png"/></a>
+                    <p>**work in progress**</p>
+                </div>
             </div>
         </section>
 
         <!--education-->
         <section id="education" class="education">
             <h1>Education</h1>
-            <div>
-                <h2>Bachelor of Science in Computer Science</h2>
-                <ul>
-                    <li>Holy Angel University, 2022-present</li>
-                    <li>Consistent President's Lister | 1st Year 1st Semester — 3rd Year 2nd Semester</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Senior HighSchool</h2>
-                <ul>
-                    <li>STEM Strand</li>
-                    <li>Holy Angel University, 2020-2022</li>
-                    <li>Graduated with High Honors</li>
-                </ul>
-            </div>            
-            <div>
-                <h2>Junior HighSchool</h2>
-                <ul>
-                    <li>Our Lady of Fatima University, 2016-2020</li>
-                    <li>Graduated with Honors</li>
-                    <li>Deportment Award</li>
-                </ul>
+            <div class="education-container">
+                <div class="edu-card">
+                    <div class="school">
+                        <h2>BS in Computer Science</h2>
+                        <img src="./assets/hau.png" alt="HAU LOGO" class="school-logo"/>
+                    </div>
+                    <ul class="edu-list">
+                        <li>Holy Angel University, 2022-present</li>
+                        <li>Consistent President's Lister | 1st Year 1st Semester — 3rd Year 2nd Semester</li>
+                    </ul>
+                </div>
+                <div class="edu-card">
+                    <div class="school">
+                        <h2>Senior HighSchool STEM</h2>
+                        <img src="./assets/hau.png" alt="HAU LOGO" class="school-logo"/>
+                    </div>
+                    <ul class="edu-list">
+                        <li>Holy Angel University, 2020-2022</li>
+                        <li>Graduated with High Honors</li>
+                    </ul>
+                </div>            
+                <div class="edu-card">
+                    <div class="school">
+                        <h2>Junior HighSchool</h2>
+                        <img src="./assets/olfu.jpg" alt="OLFU LOGO" class="school-logo"/>
+                    </div>
+                    <ul class="edu-list">
+                        <li>Our Lady of Fatima University, 2016-2020</li>
+                        <li>Graduated with Honors</li>
+                        <li>Deportment Award</li>
+                    </ul>
+                </div>
             </div>
         </section>
         
@@ -178,24 +189,25 @@
         </section>
 
         <!--contact-->
-        <section>
+        <section id="contact" class="contact">
             <h1>Contact Me</h1>
             <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media!</p>
-            <ul>
-                <div class="email">
-                    
-                    <p>you may email me at__</p>
-                    <li>Email: ashleejennifer.lee0@gmail.com</li> <!--make this auto copy once clicked-->
-                    <p>or click the button below</p>
-                    <a href=""><i class=""></i></a> <!--add email icon-->
-                </div>
+            <div class="email">
+                <p>You may email me at:</p>
+                <ul class="contact-list">
+                    <li><a href="mailto:ashleejennifer.lee0@gmail.com">ashleejennifer.lee0@gmail.com</a></li>
+                </ul>
+                <p>Or click the button below</p>
+                <a href="mailto:ashleejennifer.lee0@gmail.com" class="email-button" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </section>
 
         <!--footer-->
         <footer>
             <div class="soc-med">
-                <a href=""><i class></i></a>
-                <!-- insta, github, linkedin-->
+                <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
             </div>
             <p>&copy; 2025 ABO.</p>
         </footer>
