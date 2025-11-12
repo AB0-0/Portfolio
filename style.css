@@ -79,7 +79,7 @@ body {
     display: flex;
     align-items: center;
     padding: 12% 5%;
-    background: radial-gradient(circle at 71% 48%, var(--accent-glow) 0%, transparent 30%);
+    background: radial-gradient(circle at 80% 50%, var(--accent-glow) 0%, transparent 45%);
 }
 
 .hero-content {
@@ -106,7 +106,7 @@ body {
 .hero h1 {
     font-size: 4rem;
     margin-bottom: .5rem;
-    background: linear-gradient(40deg, var(--accent) 35%, var(--peri) 55%);
+    background: linear-gradient(35deg, var(--peri) 35%, var(--accent) 55%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -182,9 +182,9 @@ body {
 }
 .project-container{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 22rem);
     grid-template-rows: repeat(2, 1fr);
-    gap: 2rem;
+    padding-right: 4rem;
 }
 
 .project {
@@ -255,18 +255,85 @@ body {
 }
 
 /*certs*/
-.certifications h1{
+.certification {
+    padding: 5rem 5%;
+}
+
+.cert-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cert-card {
+    padding: 2rem;
+}
+
+
+.certification h1{
     font-size: 3rem;
     margin-bottom: 1.5rem;
 }
 
+.cert-img {
+    margin-top: 1rem;
+    width: 250px;
+    height: 250px;
+}
+
 /*involvement*/
+.involvement{
+    padding: 5rem 5%;
+    background-color: var(--shadow-bg);
+}
+
+.involvement-card {
+    padding-left: 2rem;
+}
+
+.involvement ul{
+    padding-left: 4rem;
+}
+
 .involvement h1{
     font-size: 3rem;
     margin-bottom: 1.5rem;
 }
+.involvement h2{
+    margin-bottom: 1rem;
+}
 
 /*contact*/
+.contact {
+    padding: 5rem 5%;
+}
+
+.contact p {
+    padding-left: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contact li {
+    list-style: none;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    margin: .7rem 0 .7rem;
+}
+
+.email{
+    text-align: center;
+}
+
+.email-btn{
+    display: inline-block;
+    margin: 1rem auto 0;
+}
+.contact i{
+    font-size:50px;
+}
 .contact h1{
     font-size: 3rem;
     margin-bottom: 1.5rem;
@@ -274,15 +341,15 @@ body {
 
 /*footer*/
 footer {
-    background: var(--shadow-bg);
-    padding-bottom: 10px;
-    padding-top: 5px;
+    background: var(--accent);
+    padding-bottom: 5px;
+    color: #fff;
     text-align: center;
     border-top: 1px solid var(--accent);
 }
 
 .soc-med {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -295,7 +362,7 @@ footer {
 }
 
 .soc-med a:hover{
-    color: var(--accent);
+    color: var(--shadow-bg);
     transform: translateY(-3px);
 }
 
