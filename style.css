@@ -2,6 +2,7 @@
 padding: 0;
 box-sizing: border-box;
 font-family: 'Segoe UI', sans-serif;
+
 }
 
 :root{
@@ -42,6 +43,39 @@ body {
     text-decoration: none;
     position: relative;
     padding-left: 2.5rem;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--peri) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.15em;
+    transition: all 0.3s ease;
+}
+
+.nav-logo::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--peri), var(--accent));
+    transition: width 0.3s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 10px var(--accent-glow));
+}
+
+.nav-logo:hover::after {
+    width: 100%;
 }
 
 .nav-links{
@@ -367,28 +401,211 @@ footer {
 }
 
 @media (max-width: 768px) {
+    /* navbar */
+    .navbar {
+        padding: 1rem 3%;
+    }
+
+    .nav-logo {
+        font-size: 1.4rem;
+        letter-spacing: 0.1em;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* hero */
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 8rem;
+        padding: 8rem 4% 4rem;
+        background: radial-gradient(circle at 50% 30%, var(--accent-glow) 0%, transparent 50%);
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 
     .hero-content {
         padding-right: 0;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
     .profile-img {
-        width: 280px;
-        height: 280px;
+        width: 250px;
+        height: 250px;
     }
 
-    .navlinks {
-        display: none;
+    .contact-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
     }
 
-    .logo {
-        font-size: 1.5rem;
-        padding-left: 2rem;
+    /*skills */
+    .skills {
+        padding: 3rem 4%;
+    }
+
+    .skills h1 {
+        font-size: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skills-card {
+        padding: 1.5rem;
+    }
+
+    .skills-list {
+        margin-left: 2rem;
+    }
+
+    /* projects*/
+    .projects {
+        padding: 3rem 4%;
+    }
+
+    .projects h1 {
+        font-size: 2rem;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+        padding-right: 0;
+    }
+
+    .project {
+        padding: 1rem;
+    }
+
+    .project-img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .projects p {
+        text-align: left;
+    }
+
+    /* educ*/
+    .education {
+        padding: 3rem 4%;
+    }
+
+    .education h1 {
+        font-size: 2rem;
+    }
+
+    .education-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .edu-card {
+        padding: 1rem 1.5rem;
+    }
+
+    .school {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .school-logo {
+        width: 50px;
+        height: 50px;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .edu-list {
+        margin-left: 1.5rem;
+    }
+
+    /* cert */
+    .certification {
+        padding: 3rem 4%;
+    }
+
+    .certification h1 {
+        font-size: 2rem;
+    }
+
+    .cert-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .cert-card {
+        padding: 1rem;
+    }
+
+    .cert-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* involvement*/
+    .involvement {
+        padding: 3rem 4%;
+    }
+
+    .involvement h1 {
+        font-size: 2rem;
+    }
+
+    .involvement-card {
+        padding-left: 1rem;
+    }
+
+    .involvement ul {
+        padding-left: 1.5rem;
+    }
+
+    /* contact */
+    .contact {
+        padding: 3rem 4%;
+    }
+
+    .contact h1 {
+        font-size: 2rem;
+    }
+
+    .contact p {
+        padding-left: 0;
+        font-size: 1rem;
+    }
+
+    .contact li {
+        padding-left: 0;
+        font-size: 0.9rem;
+    }
+
+    .contact i {
+        font-size: 2.5rem;
+    }
+
+    /* footer */
+    footer {
+        padding: 2rem 4% 1rem;
+    }
+
+    .soc-med {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .soc-med a {
+        font-size: 1.2rem;
     }
 }
