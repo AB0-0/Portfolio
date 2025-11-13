@@ -168,7 +168,7 @@ body {
 .hero h1 {
     font-size: 4rem;
     margin-bottom: .5rem;
-    background: linear-gradient(35deg, var(--peri) 35%, var(--accent) 55%);
+    background: linear-gradient(35deg, var(--text) 35%, var(--accent) 55%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -184,7 +184,7 @@ body {
 .contact-button {
     display: inline-block;
     padding: 1rem 2rem;
-    background: linear-gradient(45deg, var(--accent), var(--peri));
+    background: linear-gradient(45deg, var(--accent), var(--text));
     color: #fff;
     border-radius: 8px;
     text-decoration: none;
