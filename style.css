@@ -333,6 +333,14 @@ body {
     padding: 2rem;
 }
 
+.cert-card img {
+    margin-top: 1rem;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+}
+
 
 .certification h1{
     font-size: 3rem;
@@ -352,7 +360,24 @@ body {
 }
 
 .involvement-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
     padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.involvement-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: #fff;
+    padding: 0.35rem;
+}
+
+.involvement-content {
+    flex: 1;
 }
 
 .involvement ul{
@@ -621,6 +646,11 @@ footer {
         padding: 1rem;
     }
 
+    .cert-card img {
+        width: 200px;
+        height: 200px;
+    }
+
     .cert-img {
         width: 200px;
         height: 200px;
@@ -637,6 +667,13 @@ footer {
 
     .involvement-card {
         padding-left: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .involvement-logo {
+        width: 60px;
+        height: 60px;
     }
 
     .involvement ul {
